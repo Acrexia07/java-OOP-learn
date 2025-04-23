@@ -11,6 +11,6 @@ public class Book {
     }
 
     String displayInfo(){
-        return this.title + " (" + this.pages + ") pages";
+        return this.title + " (" + this.pages + " pages)";
     }
 }
