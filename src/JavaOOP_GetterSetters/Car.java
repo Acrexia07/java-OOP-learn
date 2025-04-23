@@ -2,7 +2,7 @@ package JavaOOP_GetterSetters;
 
 public class Car {
 
-    private String model;
+    private final String model;
     private String color;
     private int price;
 
@@ -12,14 +12,29 @@ public class Car {
         this.price = price;
     }
 
+    //Method: Readable variable
     String getModel(){
         return this.model;
     }
+
+    //Method: Readable variable
     String getColor(){
         return this.color;
     }
-    String getPrice(){
 
+    //Method: Readable variable
+    String getPrice(){
         return "$" + this.price;
+    }
+
+
+    //Method: Writable variable
+    void setColor(String color){
+        this.color = color;
+    }
+
+    //Method: Writable variable
+    void setPrice(int price){
+        this.price = price;
     }
 }
